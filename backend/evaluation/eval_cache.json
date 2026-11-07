@@ -1,0 +1,3694 @@
+{
+  "available": true,
+  "metadata": {
+    "modelName": "Dentura EfficientNetB0 Oral Disease Classifier",
+    "checkpointPath": "best_pretrained_EfficientNetB0_model.h5",
+    "checkpointSha256": "4d4735b624affe6c6fda4b9033eee02bd728b4b188b59e6c5ceb200ebb1073c3",
+    "datasetIdentifier": "Oral Pathology Multi-Class Benchmark Split (1,115 test samples)",
+    "evaluationTimestamp": "2026-10-24T05:01:39.674242+00:00",
+    "inputResolution": "224x224x3",
+    "preprocessing": "Deterministic zero-center scaling (no augmentation)",
+    "zeroDivisionHandling": "Explicit zero_division=0",
+    "classOrder": [
+      "Calculus",
+      "Caries",
+      "Gingivitis",
+      "Hypodontia",
+      "Mouth_Ulcer",
+      "Tooth_Discoloration"
+    ]
+  },
+  "overallMetrics": {
+    "totalSamples": 1115,
+    "correctPredictions": 920,
+    "incorrectPredictions": 195,
+    "accuracy": 0.8251,
+    "balancedAccuracy": 0.8066,
+    "macroPrecision": 0.8777,
+    "macroRecall": 0.8066,
+    "macroF1": 0.8278,
+    "weightedPrecision": 0.8331,
+    "weightedRecall": 0.8251,
+    "weightedF1": 0.8252
+  },
+  "perClassMetrics": [
+    {
+      "classIndex": 0,
+      "className": "Calculus",
+      "displayName": "Calculus",
+      "support": 260,
+      "truePositives": 193,
+      "falsePositives": 99,
+      "falseNegatives": 67,
+      "precision": 0.661,
+      "recall": 0.7423,
+      "f1Score": 0.6993
+    },
+    {
+      "classIndex": 1,
+      "className": "Caries",
+      "displayName": "Caries",
+      "support": 44,
+      "truePositives": 22,
+      "falsePositives": 0,
+      "falseNegatives": 22,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1Score": 0.6667
+    },
+    {
+      "classIndex": 2,
+      "className": "Gingivitis",
+      "displayName": "Gingivitis",
+      "support": 470,
+      "truePositives": 377,
+      "falsePositives": 80,
+      "falseNegatives": 93,
+      "precision": 0.8249,
+      "recall": 0.8021,
+      "f1Score": 0.8134
+    },
+    {
+      "classIndex": 3,
+      "className": "Hypodontia",
+      "displayName": "Hypodontia",
+      "support": 251,
+      "truePositives": 245,
+      "falsePositives": 9,
+      "falseNegatives": 6,
+      "precision": 0.9646,
+      "recall": 0.9761,
+      "f1Score": 0.9703
+    },
+    {
+      "classIndex": 4,
+      "className": "Mouth_Ulcer",
+      "displayName": "Mouth Ulcer",
+      "support": 53,
+      "truePositives": 52,
+      "falsePositives": 0,
+      "falseNegatives": 1,
+      "precision": 1.0,
+      "recall": 0.9811,
+      "f1Score": 0.9905
+    },
+    {
+      "classIndex": 5,
+      "className": "Tooth_Discoloration",
+      "displayName": "Tooth Discoloration",
+      "support": 37,
+      "truePositives": 31,
+      "falsePositives": 7,
+      "falseNegatives": 6,
+      "precision": 0.8158,
+      "recall": 0.8378,
+      "f1Score": 0.8267
+    }
+  ],
+  "confusionMatrix": {
+    "classLabels": [
+      "Calculus",
+      "Caries",
+      "Gingivitis",
+      "Hypodontia",
+      "Mouth_Ulcer",
+      "Tooth_Discoloration"
+    ],
+    "rawMatrix": [
+      [
+        193,
+        0,
+        67,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        22,
+        8,
+        6,
+        0,
+        4
+      ],
+      [
+        90,
+        0,
+        377,
+        1,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        4,
+        245,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        52,
+        1
+      ],
+      [
+        3,
+        0,
+        1,
+        2,
+        0,
+        31
+      ]
+    ],
+    "normalizedMatrix": [
+      [
+        0.7423,
+        0.0,
+        0.2577,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0909,
+        0.5,
+        0.1818,
+        0.1364,
+        0.0,
+        0.0909
+      ],
+      [
+        0.1915,
+        0.0,
+        0.8021,
+        0.0021,
+        0.0,
+        0.0043
+      ],
+      [
+        0.008,
+        0.0,
+        0.0159,
+        0.9761,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.9811,
+        0.0189
+      ],
+      [
+        0.0811,
+        0.0,
+        0.027,
+        0.0541,
+        0.0,
+        0.8378
+      ]
+    ],
+    "topConfusedPairs": [
+      {
+        "trueClass": "Gingivitis",
+        "predictedClass": "Calculus",
+        "count": 90,
+        "percentageOfTrue": 19.15
+      },
+      {
+        "trueClass": "Calculus",
+        "predictedClass": "Gingivitis",
+        "count": 67,
+        "percentageOfTrue": 25.77
+      },
+      {
+        "trueClass": "Caries",
+        "predictedClass": "Gingivitis",
+        "count": 8,
+        "percentageOfTrue": 18.18
+      },
+      {
+        "trueClass": "Caries",
+        "predictedClass": "Hypodontia",
+        "count": 6,
+        "percentageOfTrue": 13.64
+      },
+      {
+        "trueClass": "Caries",
+        "predictedClass": "Calculus",
+        "count": 4,
+        "percentageOfTrue": 9.09
+      },
+      {
+        "trueClass": "Caries",
+        "predictedClass": "Tooth_Discoloration",
+        "count": 4,
+        "percentageOfTrue": 9.09
+      },
+      {
+        "trueClass": "Hypodontia",
+        "predictedClass": "Gingivitis",
+        "count": 4,
+        "percentageOfTrue": 1.59
+      },
+      {
+        "trueClass": "Tooth_Discoloration",
+        "predictedClass": "Calculus",
+        "count": 3,
+        "percentageOfTrue": 8.11
+      },
+      {
+        "trueClass": "Gingivitis",
+        "predictedClass": "Tooth_Discoloration",
+        "count": 2,
+        "percentageOfTrue": 0.43
+      },
+      {
+        "trueClass": "Hypodontia",
+        "predictedClass": "Calculus",
+        "count": 2,
+        "percentageOfTrue": 0.8
+      },
+      {
+        "trueClass": "Tooth_Discoloration",
+        "predictedClass": "Hypodontia",
+        "count": 2,
+        "percentageOfTrue": 5.41
+      },
+      {
+        "trueClass": "Gingivitis",
+        "predictedClass": "Hypodontia",
+        "count": 1,
+        "percentageOfTrue": 0.21
+      },
+      {
+        "trueClass": "Mouth_Ulcer",
+        "predictedClass": "Tooth_Discoloration",
+        "count": 1,
+        "percentageOfTrue": 1.89
+      },
+      {
+        "trueClass": "Tooth_Discoloration",
+        "predictedClass": "Gingivitis",
+        "count": 1,
+        "percentageOfTrue": 2.7
+      }
+    ]
+  },
+  "misclassifiedCount": 195,
+  "misclassifiedSamples": [
+    {
+      "id": "Calculus/(10).jpg",
+      "relativePath": "Calculus/(10).jpg",
+      "filename": "(10).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.7821,
+      "trueConfidence": 0.2178,
+      "probabilities": {
+        "Calculus": 0.2178,
+        "Caries": 0.0,
+        "Gingivitis": 0.7821,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Calculus/(1025).jpg",
+      "relativePath": "Calculus/(1025).jpg",
+      "filename": "(1025).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.7017,
+      "trueConfidence": 0.2982,
+      "probabilities": {
+        "Calculus": 0.2982,
+        "Caries": 0.0,
+        "Gingivitis": 0.7017,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Calculus/(1100).jpg",
+      "relativePath": "Calculus/(1100).jpg",
+      "filename": "(1100).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.5367,
+      "trueConfidence": 0.4629,
+      "probabilities": {
+        "Calculus": 0.4629,
+        "Caries": 0.0,
+        "Gingivitis": 0.5367,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0003
+      }
+    },
+    {
+      "id": "Calculus/(1105).jpg",
+      "relativePath": "Calculus/(1105).jpg",
+      "filename": "(1105).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.7914,
+      "trueConfidence": 0.2075,
+      "probabilities": {
+        "Calculus": 0.2075,
+        "Caries": 0.0002,
+        "Gingivitis": 0.7914,
+        "Hypodontia": 0.0006,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0003
+      }
+    },
+    {
+      "id": "Calculus/(1106).jpg",
+      "relativePath": "Calculus/(1106).jpg",
+      "filename": "(1106).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.7632,
+      "trueConfidence": 0.2346,
+      "probabilities": {
+        "Calculus": 0.2346,
+        "Caries": 0.0001,
+        "Gingivitis": 0.7632,
+        "Hypodontia": 0.0017,
+        "Mouth_Ulcer": 0.0002,
+        "Tooth_Discoloration": 0.0003
+      }
+    },
+    {
+      "id": "Calculus/(1115).jpg",
+      "relativePath": "Calculus/(1115).jpg",
+      "filename": "(1115).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.9567,
+      "trueConfidence": 0.0433,
+      "probabilities": {
+        "Calculus": 0.0433,
+        "Caries": 0.0,
+        "Gingivitis": 0.9567,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Calculus/(112).jpg",
+      "relativePath": "Calculus/(112).jpg",
+      "filename": "(112).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.7235,
+      "trueConfidence": 0.2748,
+      "probabilities": {
+        "Calculus": 0.2748,
+        "Caries": 0.0007,
+        "Gingivitis": 0.7235,
+        "Hypodontia": 0.0005,
+        "Mouth_Ulcer": 0.0003,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Calculus/(1126).jpg",
+      "relativePath": "Calculus/(1126).jpg",
+      "filename": "(1126).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.5367,
+      "trueConfidence": 0.4629,
+      "probabilities": {
+        "Calculus": 0.4629,
+        "Caries": 0.0,
+        "Gingivitis": 0.5367,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0003
+      }
+    },
+    {
+      "id": "Calculus/(1145).jpg",
+      "relativePath": "Calculus/(1145).jpg",
+      "filename": "(1145).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.5367,
+      "trueConfidence": 0.4629,
+      "probabilities": {
+        "Calculus": 0.4629,
+        "Caries": 0.0,
+        "Gingivitis": 0.5367,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0003
+      }
+    },
+    {
+      "id": "Calculus/(1156).jpg",
+      "relativePath": "Calculus/(1156).jpg",
+      "filename": "(1156).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.5821,
+      "trueConfidence": 0.4141,
+      "probabilities": {
+        "Calculus": 0.4141,
+        "Caries": 0.0028,
+        "Gingivitis": 0.5821,
+        "Hypodontia": 0.0007,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Calculus/(1169).jpg",
+      "relativePath": "Calculus/(1169).jpg",
+      "filename": "(1169).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.779,
+      "trueConfidence": 0.2207,
+      "probabilities": {
+        "Calculus": 0.2207,
+        "Caries": 0.0001,
+        "Gingivitis": 0.779,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Calculus/(1187).jpg",
+      "relativePath": "Calculus/(1187).jpg",
+      "filename": "(1187).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.6698,
+      "trueConfidence": 0.306,
+      "probabilities": {
+        "Calculus": 0.306,
+        "Caries": 0.0048,
+        "Gingivitis": 0.6698,
+        "Hypodontia": 0.0067,
+        "Mouth_Ulcer": 0.0004,
+        "Tooth_Discoloration": 0.0124
+      }
+    },
+    {
+      "id": "Calculus/(1220).jpg",
+      "relativePath": "Calculus/(1220).jpg",
+      "filename": "(1220).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.6842,
+      "trueConfidence": 0.3152,
+      "probabilities": {
+        "Calculus": 0.3152,
+        "Caries": 0.0001,
+        "Gingivitis": 0.6842,
+        "Hypodontia": 0.0003,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Calculus/(123).jpg",
+      "relativePath": "Calculus/(123).jpg",
+      "filename": "(123).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.5397,
+      "trueConfidence": 0.4555,
+      "probabilities": {
+        "Calculus": 0.4555,
+        "Caries": 0.0016,
+        "Gingivitis": 0.5397,
+        "Hypodontia": 0.0019,
+        "Mouth_Ulcer": 0.0004,
+        "Tooth_Discoloration": 0.0009
+      }
+    },
+    {
+      "id": "Calculus/(1261).jpg",
+      "relativePath": "Calculus/(1261).jpg",
+      "filename": "(1261).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.6865,
+      "trueConfidence": 0.3119,
+      "probabilities": {
+        "Calculus": 0.3119,
+        "Caries": 0.0001,
+        "Gingivitis": 0.6865,
+        "Hypodontia": 0.0002,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0012
+      }
+    },
+    {
+      "id": "Calculus/(136).jpg",
+      "relativePath": "Calculus/(136).jpg",
+      "filename": "(136).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.595,
+      "trueConfidence": 0.4048,
+      "probabilities": {
+        "Calculus": 0.4048,
+        "Caries": 0.0001,
+        "Gingivitis": 0.595,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Calculus/(138).jpg",
+      "relativePath": "Calculus/(138).jpg",
+      "filename": "(138).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.5781,
+      "trueConfidence": 0.4112,
+      "probabilities": {
+        "Calculus": 0.4112,
+        "Caries": 0.0087,
+        "Gingivitis": 0.5781,
+        "Hypodontia": 0.0014,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0004
+      }
+    },
+    {
+      "id": "Calculus/(160).jpg",
+      "relativePath": "Calculus/(160).jpg",
+      "filename": "(160).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.7906,
+      "trueConfidence": 0.2085,
+      "probabilities": {
+        "Calculus": 0.2085,
+        "Caries": 0.0007,
+        "Gingivitis": 0.7906,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Calculus/(17).jpg",
+      "relativePath": "Calculus/(17).jpg",
+      "filename": "(17).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.7839,
+      "trueConfidence": 0.2158,
+      "probabilities": {
+        "Calculus": 0.2158,
+        "Caries": 0.0001,
+        "Gingivitis": 0.7839,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Calculus/(199).jpg",
+      "relativePath": "Calculus/(199).jpg",
+      "filename": "(199).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.503,
+      "trueConfidence": 0.4961,
+      "probabilities": {
+        "Calculus": 0.4961,
+        "Caries": 0.0002,
+        "Gingivitis": 0.503,
+        "Hypodontia": 0.0003,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Calculus/(201).jpg",
+      "relativePath": "Calculus/(201).jpg",
+      "filename": "(201).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.7111,
+      "trueConfidence": 0.2883,
+      "probabilities": {
+        "Calculus": 0.2883,
+        "Caries": 0.0001,
+        "Gingivitis": 0.7111,
+        "Hypodontia": 0.0003,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Calculus/(223).jpg",
+      "relativePath": "Calculus/(223).jpg",
+      "filename": "(223).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.503,
+      "trueConfidence": 0.4961,
+      "probabilities": {
+        "Calculus": 0.4961,
+        "Caries": 0.0002,
+        "Gingivitis": 0.503,
+        "Hypodontia": 0.0003,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Calculus/(228).jpg",
+      "relativePath": "Calculus/(228).jpg",
+      "filename": "(228).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.5702,
+      "trueConfidence": 0.4295,
+      "probabilities": {
+        "Calculus": 0.4295,
+        "Caries": 0.0001,
+        "Gingivitis": 0.5702,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Calculus/(232).jpg",
+      "relativePath": "Calculus/(232).jpg",
+      "filename": "(232).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.6268,
+      "trueConfidence": 0.3731,
+      "probabilities": {
+        "Calculus": 0.3731,
+        "Caries": 0.0,
+        "Gingivitis": 0.6268,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Calculus/(251).jpg",
+      "relativePath": "Calculus/(251).jpg",
+      "filename": "(251).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.6269,
+      "trueConfidence": 0.3727,
+      "probabilities": {
+        "Calculus": 0.3727,
+        "Caries": 0.0001,
+        "Gingivitis": 0.6269,
+        "Hypodontia": 0.0002,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Calculus/(253).jpg",
+      "relativePath": "Calculus/(253).jpg",
+      "filename": "(253).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.8713,
+      "trueConfidence": 0.1286,
+      "probabilities": {
+        "Calculus": 0.1286,
+        "Caries": 0.0,
+        "Gingivitis": 0.8713,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Calculus/(256).jpg",
+      "relativePath": "Calculus/(256).jpg",
+      "filename": "(256).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.881,
+      "trueConfidence": 0.1182,
+      "probabilities": {
+        "Calculus": 0.1182,
+        "Caries": 0.0002,
+        "Gingivitis": 0.881,
+        "Hypodontia": 0.0004,
+        "Mouth_Ulcer": 0.0002,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Calculus/(289).jpg",
+      "relativePath": "Calculus/(289).jpg",
+      "filename": "(289).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.6326,
+      "trueConfidence": 0.3662,
+      "probabilities": {
+        "Calculus": 0.3662,
+        "Caries": 0.0001,
+        "Gingivitis": 0.6326,
+        "Hypodontia": 0.0004,
+        "Mouth_Ulcer": 0.0002,
+        "Tooth_Discoloration": 0.0004
+      }
+    },
+    {
+      "id": "Calculus/(344).jpg",
+      "relativePath": "Calculus/(344).jpg",
+      "filename": "(344).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.8593,
+      "trueConfidence": 0.1394,
+      "probabilities": {
+        "Calculus": 0.1394,
+        "Caries": 0.0002,
+        "Gingivitis": 0.8593,
+        "Hypodontia": 0.0008,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0003
+      }
+    },
+    {
+      "id": "Calculus/(345).jpg",
+      "relativePath": "Calculus/(345).jpg",
+      "filename": "(345).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.7077,
+      "trueConfidence": 0.2918,
+      "probabilities": {
+        "Calculus": 0.2918,
+        "Caries": 0.0,
+        "Gingivitis": 0.7077,
+        "Hypodontia": 0.0003,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Calculus/(372).jpg",
+      "relativePath": "Calculus/(372).jpg",
+      "filename": "(372).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.8343,
+      "trueConfidence": 0.1655,
+      "probabilities": {
+        "Calculus": 0.1655,
+        "Caries": 0.0,
+        "Gingivitis": 0.8343,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Calculus/(373).jpg",
+      "relativePath": "Calculus/(373).jpg",
+      "filename": "(373).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.61,
+      "trueConfidence": 0.3898,
+      "probabilities": {
+        "Calculus": 0.3898,
+        "Caries": 0.0001,
+        "Gingivitis": 0.61,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Calculus/(411).jpg",
+      "relativePath": "Calculus/(411).jpg",
+      "filename": "(411).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.6224,
+      "trueConfidence": 0.3757,
+      "probabilities": {
+        "Calculus": 0.3757,
+        "Caries": 0.0003,
+        "Gingivitis": 0.6224,
+        "Hypodontia": 0.0013,
+        "Mouth_Ulcer": 0.0002,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Calculus/(413).jpg",
+      "relativePath": "Calculus/(413).jpg",
+      "filename": "(413).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.9484,
+      "trueConfidence": 0.0515,
+      "probabilities": {
+        "Calculus": 0.0515,
+        "Caries": 0.0,
+        "Gingivitis": 0.9484,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Calculus/(459).jpg",
+      "relativePath": "Calculus/(459).jpg",
+      "filename": "(459).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.6117,
+      "trueConfidence": 0.3878,
+      "probabilities": {
+        "Calculus": 0.3878,
+        "Caries": 0.0,
+        "Gingivitis": 0.6117,
+        "Hypodontia": 0.0002,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Calculus/(466).jpg",
+      "relativePath": "Calculus/(466).jpg",
+      "filename": "(466).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.8382,
+      "trueConfidence": 0.1616,
+      "probabilities": {
+        "Calculus": 0.1616,
+        "Caries": 0.0,
+        "Gingivitis": 0.8382,
+        "Hypodontia": 0.0002,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Calculus/(499).jpg",
+      "relativePath": "Calculus/(499).jpg",
+      "filename": "(499).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.6493,
+      "trueConfidence": 0.3505,
+      "probabilities": {
+        "Calculus": 0.3505,
+        "Caries": 0.0,
+        "Gingivitis": 0.6493,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Calculus/(500).jpg",
+      "relativePath": "Calculus/(500).jpg",
+      "filename": "(500).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.6429,
+      "trueConfidence": 0.3567,
+      "probabilities": {
+        "Calculus": 0.3567,
+        "Caries": 0.0001,
+        "Gingivitis": 0.6429,
+        "Hypodontia": 0.0002,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Calculus/(504).jpg",
+      "relativePath": "Calculus/(504).jpg",
+      "filename": "(504).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.7392,
+      "trueConfidence": 0.2601,
+      "probabilities": {
+        "Calculus": 0.2601,
+        "Caries": 0.0,
+        "Gingivitis": 0.7392,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0005
+      }
+    },
+    {
+      "id": "Calculus/(520).jpg",
+      "relativePath": "Calculus/(520).jpg",
+      "filename": "(520).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.5845,
+      "trueConfidence": 0.4153,
+      "probabilities": {
+        "Calculus": 0.4153,
+        "Caries": 0.0,
+        "Gingivitis": 0.5845,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Calculus/(530).jpg",
+      "relativePath": "Calculus/(530).jpg",
+      "filename": "(530).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.7132,
+      "trueConfidence": 0.2863,
+      "probabilities": {
+        "Calculus": 0.2863,
+        "Caries": 0.0001,
+        "Gingivitis": 0.7132,
+        "Hypodontia": 0.0003,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Calculus/(532).jpg",
+      "relativePath": "Calculus/(532).jpg",
+      "filename": "(532).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.7392,
+      "trueConfidence": 0.2601,
+      "probabilities": {
+        "Calculus": 0.2601,
+        "Caries": 0.0,
+        "Gingivitis": 0.7392,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0005
+      }
+    },
+    {
+      "id": "Calculus/(541).jpg",
+      "relativePath": "Calculus/(541).jpg",
+      "filename": "(541).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.6493,
+      "trueConfidence": 0.3505,
+      "probabilities": {
+        "Calculus": 0.3505,
+        "Caries": 0.0,
+        "Gingivitis": 0.6493,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Calculus/(551).jpg",
+      "relativePath": "Calculus/(551).jpg",
+      "filename": "(551).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.7132,
+      "trueConfidence": 0.2863,
+      "probabilities": {
+        "Calculus": 0.2863,
+        "Caries": 0.0001,
+        "Gingivitis": 0.7132,
+        "Hypodontia": 0.0003,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Calculus/(561).jpg",
+      "relativePath": "Calculus/(561).jpg",
+      "filename": "(561).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.7434,
+      "trueConfidence": 0.2556,
+      "probabilities": {
+        "Calculus": 0.2556,
+        "Caries": 0.0001,
+        "Gingivitis": 0.7434,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0007,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Calculus/(568).jpg",
+      "relativePath": "Calculus/(568).jpg",
+      "filename": "(568).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.5845,
+      "trueConfidence": 0.4153,
+      "probabilities": {
+        "Calculus": 0.4153,
+        "Caries": 0.0,
+        "Gingivitis": 0.5845,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Calculus/(610).jpg",
+      "relativePath": "Calculus/(610).jpg",
+      "filename": "(610).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.642,
+      "trueConfidence": 0.358,
+      "probabilities": {
+        "Calculus": 0.358,
+        "Caries": 0.0,
+        "Gingivitis": 0.642,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Calculus/(611).jpg",
+      "relativePath": "Calculus/(611).jpg",
+      "filename": "(611).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.5754,
+      "trueConfidence": 0.4167,
+      "probabilities": {
+        "Calculus": 0.4167,
+        "Caries": 0.0021,
+        "Gingivitis": 0.5754,
+        "Hypodontia": 0.0011,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0045
+      }
+    },
+    {
+      "id": "Calculus/(633).jpg",
+      "relativePath": "Calculus/(633).jpg",
+      "filename": "(633).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.5703,
+      "trueConfidence": 0.4291,
+      "probabilities": {
+        "Calculus": 0.4291,
+        "Caries": 0.0002,
+        "Gingivitis": 0.5703,
+        "Hypodontia": 0.0002,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Calculus/(664).jpg",
+      "relativePath": "Calculus/(664).jpg",
+      "filename": "(664).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.5624,
+      "trueConfidence": 0.4375,
+      "probabilities": {
+        "Calculus": 0.4375,
+        "Caries": 0.0,
+        "Gingivitis": 0.5624,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Calculus/(669).jpg",
+      "relativePath": "Calculus/(669).jpg",
+      "filename": "(669).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.7683,
+      "trueConfidence": 0.2315,
+      "probabilities": {
+        "Calculus": 0.2315,
+        "Caries": 0.0,
+        "Gingivitis": 0.7683,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Calculus/(685).jpg",
+      "relativePath": "Calculus/(685).jpg",
+      "filename": "(685).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.7114,
+      "trueConfidence": 0.2879,
+      "probabilities": {
+        "Calculus": 0.2879,
+        "Caries": 0.0001,
+        "Gingivitis": 0.7114,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0005
+      }
+    },
+    {
+      "id": "Calculus/(695).jpg",
+      "relativePath": "Calculus/(695).jpg",
+      "filename": "(695).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.6428,
+      "trueConfidence": 0.3546,
+      "probabilities": {
+        "Calculus": 0.3546,
+        "Caries": 0.0008,
+        "Gingivitis": 0.6428,
+        "Hypodontia": 0.0013,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0005
+      }
+    },
+    {
+      "id": "Calculus/(804).jpg",
+      "relativePath": "Calculus/(804).jpg",
+      "filename": "(804).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.9382,
+      "trueConfidence": 0.0618,
+      "probabilities": {
+        "Calculus": 0.0618,
+        "Caries": 0.0,
+        "Gingivitis": 0.9382,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Calculus/(818).jpg",
+      "relativePath": "Calculus/(818).jpg",
+      "filename": "(818).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.537,
+      "trueConfidence": 0.4627,
+      "probabilities": {
+        "Calculus": 0.4627,
+        "Caries": 0.0001,
+        "Gingivitis": 0.537,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Calculus/(826).jpg",
+      "relativePath": "Calculus/(826).jpg",
+      "filename": "(826).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.496,
+      "trueConfidence": 0.493,
+      "probabilities": {
+        "Calculus": 0.493,
+        "Caries": 0.0019,
+        "Gingivitis": 0.496,
+        "Hypodontia": 0.0085,
+        "Mouth_Ulcer": 0.0003,
+        "Tooth_Discoloration": 0.0003
+      }
+    },
+    {
+      "id": "Calculus/(829).jpg",
+      "relativePath": "Calculus/(829).jpg",
+      "filename": "(829).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.8265,
+      "trueConfidence": 0.1733,
+      "probabilities": {
+        "Calculus": 0.1733,
+        "Caries": 0.0,
+        "Gingivitis": 0.8265,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Calculus/(837).jpg",
+      "relativePath": "Calculus/(837).jpg",
+      "filename": "(837).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.496,
+      "trueConfidence": 0.493,
+      "probabilities": {
+        "Calculus": 0.493,
+        "Caries": 0.0019,
+        "Gingivitis": 0.496,
+        "Hypodontia": 0.0085,
+        "Mouth_Ulcer": 0.0003,
+        "Tooth_Discoloration": 0.0003
+      }
+    },
+    {
+      "id": "Calculus/(845).jpg",
+      "relativePath": "Calculus/(845).jpg",
+      "filename": "(845).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.989,
+      "trueConfidence": 0.0109,
+      "probabilities": {
+        "Calculus": 0.0109,
+        "Caries": 0.0,
+        "Gingivitis": 0.989,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Calculus/(847).jpg",
+      "relativePath": "Calculus/(847).jpg",
+      "filename": "(847).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.8987,
+      "trueConfidence": 0.0989,
+      "probabilities": {
+        "Calculus": 0.0989,
+        "Caries": 0.0003,
+        "Gingivitis": 0.8987,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.002
+      }
+    },
+    {
+      "id": "Calculus/(85).jpg",
+      "relativePath": "Calculus/(85).jpg",
+      "filename": "(85).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.595,
+      "trueConfidence": 0.4048,
+      "probabilities": {
+        "Calculus": 0.4048,
+        "Caries": 0.0001,
+        "Gingivitis": 0.595,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Calculus/(869).jpg",
+      "relativePath": "Calculus/(869).jpg",
+      "filename": "(869).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.7529,
+      "trueConfidence": 0.2446,
+      "probabilities": {
+        "Calculus": 0.2446,
+        "Caries": 0.0001,
+        "Gingivitis": 0.7529,
+        "Hypodontia": 0.0016,
+        "Mouth_Ulcer": 0.0006,
+        "Tooth_Discoloration": 0.0003
+      }
+    },
+    {
+      "id": "Calculus/(898).jpg",
+      "relativePath": "Calculus/(898).jpg",
+      "filename": "(898).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.7996,
+      "trueConfidence": 0.2003,
+      "probabilities": {
+        "Calculus": 0.2003,
+        "Caries": 0.0,
+        "Gingivitis": 0.7996,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Calculus/(920).jpg",
+      "relativePath": "Calculus/(920).jpg",
+      "filename": "(920).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.9372,
+      "trueConfidence": 0.0619,
+      "probabilities": {
+        "Calculus": 0.0619,
+        "Caries": 0.0001,
+        "Gingivitis": 0.9372,
+        "Hypodontia": 0.0007,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Calculus/(971).jpg",
+      "relativePath": "Calculus/(971).jpg",
+      "filename": "(971).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.8161,
+      "trueConfidence": 0.1837,
+      "probabilities": {
+        "Calculus": 0.1837,
+        "Caries": 0.0,
+        "Gingivitis": 0.8161,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Calculus/(987).jpg",
+      "relativePath": "Calculus/(987).jpg",
+      "filename": "(987).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.7012,
+      "trueConfidence": 0.2976,
+      "probabilities": {
+        "Calculus": 0.2976,
+        "Caries": 0.0002,
+        "Gingivitis": 0.7012,
+        "Hypodontia": 0.0005,
+        "Mouth_Ulcer": 0.0002,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Calculus/(989).jpg",
+      "relativePath": "Calculus/(989).jpg",
+      "filename": "(989).jpg",
+      "trueClass": "Calculus",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.8513,
+      "trueConfidence": 0.1486,
+      "probabilities": {
+        "Calculus": 0.1486,
+        "Caries": 0.0,
+        "Gingivitis": 0.8513,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Caries/103.jpg",
+      "relativePath": "Caries/103.jpg",
+      "filename": "103.jpg",
+      "trueClass": "Caries",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.9987,
+      "trueConfidence": 0.0,
+      "probabilities": {
+        "Calculus": 0.9987,
+        "Caries": 0.0,
+        "Gingivitis": 0.0013,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Caries/104.jpg",
+      "relativePath": "Caries/104.jpg",
+      "filename": "104.jpg",
+      "trueClass": "Caries",
+      "predictedClass": "Tooth_Discoloration",
+      "predictedConfidence": 0.7289,
+      "trueConfidence": 0.2623,
+      "probabilities": {
+        "Calculus": 0.0068,
+        "Caries": 0.2623,
+        "Gingivitis": 0.0011,
+        "Hypodontia": 0.0008,
+        "Mouth_Ulcer": 0.0002,
+        "Tooth_Discoloration": 0.7289
+      }
+    },
+    {
+      "id": "Caries/105.jpg",
+      "relativePath": "Caries/105.jpg",
+      "filename": "105.jpg",
+      "trueClass": "Caries",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.8365,
+      "trueConfidence": 0.0528,
+      "probabilities": {
+        "Calculus": 0.0001,
+        "Caries": 0.0528,
+        "Gingivitis": 0.8365,
+        "Hypodontia": 0.1101,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0004
+      }
+    },
+    {
+      "id": "Caries/118.jpg",
+      "relativePath": "Caries/118.jpg",
+      "filename": "118.jpg",
+      "trueClass": "Caries",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.9416,
+      "trueConfidence": 0.0011,
+      "probabilities": {
+        "Calculus": 0.9416,
+        "Caries": 0.0011,
+        "Gingivitis": 0.042,
+        "Hypodontia": 0.0008,
+        "Mouth_Ulcer": 0.0142,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Caries/119.jpg",
+      "relativePath": "Caries/119.jpg",
+      "filename": "119.jpg",
+      "trueClass": "Caries",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.993,
+      "trueConfidence": 0.0,
+      "probabilities": {
+        "Calculus": 0.993,
+        "Caries": 0.0,
+        "Gingivitis": 0.0066,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0004,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Caries/121.jpg",
+      "relativePath": "Caries/121.jpg",
+      "filename": "121.jpg",
+      "trueClass": "Caries",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.9723,
+      "trueConfidence": 0.0168,
+      "probabilities": {
+        "Calculus": 0.0014,
+        "Caries": 0.0168,
+        "Gingivitis": 0.9723,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0093
+      }
+    },
+    {
+      "id": "Caries/148.jpg",
+      "relativePath": "Caries/148.jpg",
+      "filename": "148.jpg",
+      "trueClass": "Caries",
+      "predictedClass": "Hypodontia",
+      "predictedConfidence": 0.9999,
+      "trueConfidence": 0.0001,
+      "probabilities": {
+        "Calculus": 0.0,
+        "Caries": 0.0001,
+        "Gingivitis": 0.0,
+        "Hypodontia": 0.9999,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Caries/149.jpg",
+      "relativePath": "Caries/149.jpg",
+      "filename": "149.jpg",
+      "trueClass": "Caries",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.9298,
+      "trueConfidence": 0.0353,
+      "probabilities": {
+        "Calculus": 0.0348,
+        "Caries": 0.0353,
+        "Gingivitis": 0.9298,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Caries/15.jpg",
+      "relativePath": "Caries/15.jpg",
+      "filename": "15.jpg",
+      "trueClass": "Caries",
+      "predictedClass": "Hypodontia",
+      "predictedConfidence": 0.8213,
+      "trueConfidence": 0.1505,
+      "probabilities": {
+        "Calculus": 0.0,
+        "Caries": 0.1505,
+        "Gingivitis": 0.0,
+        "Hypodontia": 0.8213,
+        "Mouth_Ulcer": 0.0052,
+        "Tooth_Discoloration": 0.0231
+      }
+    },
+    {
+      "id": "Caries/151.jpg",
+      "relativePath": "Caries/151.jpg",
+      "filename": "151.jpg",
+      "trueClass": "Caries",
+      "predictedClass": "Hypodontia",
+      "predictedConfidence": 0.9841,
+      "trueConfidence": 0.0156,
+      "probabilities": {
+        "Calculus": 0.0,
+        "Caries": 0.0156,
+        "Gingivitis": 0.0002,
+        "Hypodontia": 0.9841,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Caries/161.jpg",
+      "relativePath": "Caries/161.jpg",
+      "filename": "161.jpg",
+      "trueClass": "Caries",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 1.0,
+      "trueConfidence": 0.0,
+      "probabilities": {
+        "Calculus": 1.0,
+        "Caries": 0.0,
+        "Gingivitis": 0.0,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Caries/162.jpg",
+      "relativePath": "Caries/162.jpg",
+      "filename": "162.jpg",
+      "trueClass": "Caries",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.8973,
+      "trueConfidence": 0.0606,
+      "probabilities": {
+        "Calculus": 0.0005,
+        "Caries": 0.0606,
+        "Gingivitis": 0.8973,
+        "Hypodontia": 0.0003,
+        "Mouth_Ulcer": 0.0088,
+        "Tooth_Discoloration": 0.0325
+      }
+    },
+    {
+      "id": "Caries/176.jpg",
+      "relativePath": "Caries/176.jpg",
+      "filename": "176.jpg",
+      "trueClass": "Caries",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.896,
+      "trueConfidence": 0.1005,
+      "probabilities": {
+        "Calculus": 0.0031,
+        "Caries": 0.1005,
+        "Gingivitis": 0.896,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0002,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Caries/177.jpg",
+      "relativePath": "Caries/177.jpg",
+      "filename": "177.jpg",
+      "trueClass": "Caries",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 1.0,
+      "trueConfidence": 0.0,
+      "probabilities": {
+        "Calculus": 0.0,
+        "Caries": 0.0,
+        "Gingivitis": 1.0,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Caries/195.jpg",
+      "relativePath": "Caries/195.jpg",
+      "filename": "195.jpg",
+      "trueClass": "Caries",
+      "predictedClass": "Hypodontia",
+      "predictedConfidence": 0.5738,
+      "trueConfidence": 0.4257,
+      "probabilities": {
+        "Calculus": 0.0,
+        "Caries": 0.4257,
+        "Gingivitis": 0.0,
+        "Hypodontia": 0.5738,
+        "Mouth_Ulcer": 0.0004,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Caries/27.jpg",
+      "relativePath": "Caries/27.jpg",
+      "filename": "27.jpg",
+      "trueClass": "Caries",
+      "predictedClass": "Hypodontia",
+      "predictedConfidence": 0.9777,
+      "trueConfidence": 0.0154,
+      "probabilities": {
+        "Calculus": 0.0,
+        "Caries": 0.0154,
+        "Gingivitis": 0.0,
+        "Hypodontia": 0.9777,
+        "Mouth_Ulcer": 0.0019,
+        "Tooth_Discoloration": 0.0049
+      }
+    },
+    {
+      "id": "Caries/38.jpg",
+      "relativePath": "Caries/38.jpg",
+      "filename": "38.jpg",
+      "trueClass": "Caries",
+      "predictedClass": "Tooth_Discoloration",
+      "predictedConfidence": 0.9711,
+      "trueConfidence": 0.0289,
+      "probabilities": {
+        "Calculus": 0.0,
+        "Caries": 0.0289,
+        "Gingivitis": 0.0,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.9711
+      }
+    },
+    {
+      "id": "Caries/68.jpg",
+      "relativePath": "Caries/68.jpg",
+      "filename": "68.jpg",
+      "trueClass": "Caries",
+      "predictedClass": "Tooth_Discoloration",
+      "predictedConfidence": 0.9402,
+      "trueConfidence": 0.0111,
+      "probabilities": {
+        "Calculus": 0.0,
+        "Caries": 0.0111,
+        "Gingivitis": 0.0,
+        "Hypodontia": 0.0015,
+        "Mouth_Ulcer": 0.0472,
+        "Tooth_Discoloration": 0.9402
+      }
+    },
+    {
+      "id": "Caries/71.jpg",
+      "relativePath": "Caries/71.jpg",
+      "filename": "71.jpg",
+      "trueClass": "Caries",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.7937,
+      "trueConfidence": 0.1986,
+      "probabilities": {
+        "Calculus": 0.0004,
+        "Caries": 0.1986,
+        "Gingivitis": 0.7937,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0073
+      }
+    },
+    {
+      "id": "Caries/72.jpg",
+      "relativePath": "Caries/72.jpg",
+      "filename": "72.jpg",
+      "trueClass": "Caries",
+      "predictedClass": "Tooth_Discoloration",
+      "predictedConfidence": 0.5451,
+      "trueConfidence": 0.4535,
+      "probabilities": {
+        "Calculus": 0.0,
+        "Caries": 0.4535,
+        "Gingivitis": 0.0,
+        "Hypodontia": 0.0013,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.5451
+      }
+    },
+    {
+      "id": "Caries/85.jpg",
+      "relativePath": "Caries/85.jpg",
+      "filename": "85.jpg",
+      "trueClass": "Caries",
+      "predictedClass": "Hypodontia",
+      "predictedConfidence": 0.8978,
+      "trueConfidence": 0.0329,
+      "probabilities": {
+        "Calculus": 0.0005,
+        "Caries": 0.0329,
+        "Gingivitis": 0.0683,
+        "Hypodontia": 0.8978,
+        "Mouth_Ulcer": 0.0003,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Caries/97.jpg",
+      "relativePath": "Caries/97.jpg",
+      "filename": "97.jpg",
+      "trueClass": "Caries",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.6889,
+      "trueConfidence": 0.2688,
+      "probabilities": {
+        "Calculus": 0.0006,
+        "Caries": 0.2688,
+        "Gingivitis": 0.6889,
+        "Hypodontia": 0.002,
+        "Mouth_Ulcer": 0.0363,
+        "Tooth_Discoloration": 0.0034
+      }
+    },
+    {
+      "id": "Gingivitis/(1021).jpg",
+      "relativePath": "Gingivitis/(1021).jpg",
+      "filename": "(1021).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.7332,
+      "trueConfidence": 0.2667,
+      "probabilities": {
+        "Calculus": 0.7332,
+        "Caries": 0.0,
+        "Gingivitis": 0.2667,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(1024).jpg",
+      "relativePath": "Gingivitis/(1024).jpg",
+      "filename": "(1024).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.9126,
+      "trueConfidence": 0.0874,
+      "probabilities": {
+        "Calculus": 0.9126,
+        "Caries": 0.0,
+        "Gingivitis": 0.0874,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(1027).jpg",
+      "relativePath": "Gingivitis/(1027).jpg",
+      "filename": "(1027).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6769,
+      "trueConfidence": 0.3228,
+      "probabilities": {
+        "Calculus": 0.6769,
+        "Caries": 0.0,
+        "Gingivitis": 0.3228,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Gingivitis/(1043).jpg",
+      "relativePath": "Gingivitis/(1043).jpg",
+      "filename": "(1043).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.9569,
+      "trueConfidence": 0.0413,
+      "probabilities": {
+        "Calculus": 0.9569,
+        "Caries": 0.0001,
+        "Gingivitis": 0.0413,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0017
+      }
+    },
+    {
+      "id": "Gingivitis/(1049).jpg",
+      "relativePath": "Gingivitis/(1049).jpg",
+      "filename": "(1049).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5215,
+      "trueConfidence": 0.4775,
+      "probabilities": {
+        "Calculus": 0.5215,
+        "Caries": 0.0005,
+        "Gingivitis": 0.4775,
+        "Hypodontia": 0.0004,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Gingivitis/(1108)(1).jpg",
+      "relativePath": "Gingivitis/(1108)(1).jpg",
+      "filename": "(1108)(1).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5166,
+      "trueConfidence": 0.363,
+      "probabilities": {
+        "Calculus": 0.5166,
+        "Caries": 0.0056,
+        "Gingivitis": 0.363,
+        "Hypodontia": 0.1112,
+        "Mouth_Ulcer": 0.0011,
+        "Tooth_Discoloration": 0.0025
+      }
+    },
+    {
+      "id": "Gingivitis/(1121).jpg",
+      "relativePath": "Gingivitis/(1121).jpg",
+      "filename": "(1121).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6808,
+      "trueConfidence": 0.3177,
+      "probabilities": {
+        "Calculus": 0.6808,
+        "Caries": 0.0003,
+        "Gingivitis": 0.3177,
+        "Hypodontia": 0.0007,
+        "Mouth_Ulcer": 0.0002,
+        "Tooth_Discoloration": 0.0003
+      }
+    },
+    {
+      "id": "Gingivitis/(1129).jpg",
+      "relativePath": "Gingivitis/(1129).jpg",
+      "filename": "(1129).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6547,
+      "trueConfidence": 0.3425,
+      "probabilities": {
+        "Calculus": 0.6547,
+        "Caries": 0.0003,
+        "Gingivitis": 0.3425,
+        "Hypodontia": 0.0006,
+        "Mouth_Ulcer": 0.0015,
+        "Tooth_Discoloration": 0.0005
+      }
+    },
+    {
+      "id": "Gingivitis/(1156).jpg",
+      "relativePath": "Gingivitis/(1156).jpg",
+      "filename": "(1156).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5146,
+      "trueConfidence": 0.4832,
+      "probabilities": {
+        "Calculus": 0.5146,
+        "Caries": 0.0019,
+        "Gingivitis": 0.4832,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Gingivitis/(1168).jpg",
+      "relativePath": "Gingivitis/(1168).jpg",
+      "filename": "(1168).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5197,
+      "trueConfidence": 0.4779,
+      "probabilities": {
+        "Calculus": 0.5197,
+        "Caries": 0.0009,
+        "Gingivitis": 0.4779,
+        "Hypodontia": 0.0009,
+        "Mouth_Ulcer": 0.0002,
+        "Tooth_Discoloration": 0.0003
+      }
+    },
+    {
+      "id": "Gingivitis/(119).jpg",
+      "relativePath": "Gingivitis/(119).jpg",
+      "filename": "(119).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.4992,
+      "trueConfidence": 0.4973,
+      "probabilities": {
+        "Calculus": 0.4992,
+        "Caries": 0.0032,
+        "Gingivitis": 0.4973,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Gingivitis/(1197).jpg",
+      "relativePath": "Gingivitis/(1197).jpg",
+      "filename": "(1197).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6808,
+      "trueConfidence": 0.3177,
+      "probabilities": {
+        "Calculus": 0.6808,
+        "Caries": 0.0003,
+        "Gingivitis": 0.3177,
+        "Hypodontia": 0.0007,
+        "Mouth_Ulcer": 0.0002,
+        "Tooth_Discoloration": 0.0003
+      }
+    },
+    {
+      "id": "Gingivitis/(1199).jpg",
+      "relativePath": "Gingivitis/(1199).jpg",
+      "filename": "(1199).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5268,
+      "trueConfidence": 0.4657,
+      "probabilities": {
+        "Calculus": 0.5268,
+        "Caries": 0.0046,
+        "Gingivitis": 0.4657,
+        "Hypodontia": 0.0011,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0017
+      }
+    },
+    {
+      "id": "Gingivitis/(12).jpg",
+      "relativePath": "Gingivitis/(12).jpg",
+      "filename": "(12).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5925,
+      "trueConfidence": 0.4065,
+      "probabilities": {
+        "Calculus": 0.5925,
+        "Caries": 0.0005,
+        "Gingivitis": 0.4065,
+        "Hypodontia": 0.0004,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(1239).jpg",
+      "relativePath": "Gingivitis/(1239).jpg",
+      "filename": "(1239).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5847,
+      "trueConfidence": 0.4077,
+      "probabilities": {
+        "Calculus": 0.5847,
+        "Caries": 0.004,
+        "Gingivitis": 0.4077,
+        "Hypodontia": 0.0029,
+        "Mouth_Ulcer": 0.0004,
+        "Tooth_Discoloration": 0.0003
+      }
+    },
+    {
+      "id": "Gingivitis/(1250).jpg",
+      "relativePath": "Gingivitis/(1250).jpg",
+      "filename": "(1250).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5953,
+      "trueConfidence": 0.3857,
+      "probabilities": {
+        "Calculus": 0.5953,
+        "Caries": 0.0185,
+        "Gingivitis": 0.3857,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0004
+      }
+    },
+    {
+      "id": "Gingivitis/(1273).jpg",
+      "relativePath": "Gingivitis/(1273).jpg",
+      "filename": "(1273).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5166,
+      "trueConfidence": 0.363,
+      "probabilities": {
+        "Calculus": 0.5166,
+        "Caries": 0.0056,
+        "Gingivitis": 0.363,
+        "Hypodontia": 0.1112,
+        "Mouth_Ulcer": 0.0011,
+        "Tooth_Discoloration": 0.0025
+      }
+    },
+    {
+      "id": "Gingivitis/(1277).jpg",
+      "relativePath": "Gingivitis/(1277).jpg",
+      "filename": "(1277).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6808,
+      "trueConfidence": 0.3177,
+      "probabilities": {
+        "Calculus": 0.6808,
+        "Caries": 0.0003,
+        "Gingivitis": 0.3177,
+        "Hypodontia": 0.0007,
+        "Mouth_Ulcer": 0.0002,
+        "Tooth_Discoloration": 0.0003
+      }
+    },
+    {
+      "id": "Gingivitis/(1279).jpg",
+      "relativePath": "Gingivitis/(1279).jpg",
+      "filename": "(1279).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5268,
+      "trueConfidence": 0.4657,
+      "probabilities": {
+        "Calculus": 0.5268,
+        "Caries": 0.0046,
+        "Gingivitis": 0.4657,
+        "Hypodontia": 0.0011,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0017
+      }
+    },
+    {
+      "id": "Gingivitis/(1299).jpg",
+      "relativePath": "Gingivitis/(1299).jpg",
+      "filename": "(1299).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Tooth_Discoloration",
+      "predictedConfidence": 0.9971,
+      "trueConfidence": 0.0029,
+      "probabilities": {
+        "Calculus": 0.0001,
+        "Caries": 0.0,
+        "Gingivitis": 0.0029,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.9971
+      }
+    },
+    {
+      "id": "Gingivitis/(1303).jpg",
+      "relativePath": "Gingivitis/(1303).jpg",
+      "filename": "(1303).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.9759,
+      "trueConfidence": 0.024,
+      "probabilities": {
+        "Calculus": 0.9759,
+        "Caries": 0.0,
+        "Gingivitis": 0.024,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(1309).jpg",
+      "relativePath": "Gingivitis/(1309).jpg",
+      "filename": "(1309).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5834,
+      "trueConfidence": 0.4143,
+      "probabilities": {
+        "Calculus": 0.5834,
+        "Caries": 0.0012,
+        "Gingivitis": 0.4143,
+        "Hypodontia": 0.0007,
+        "Mouth_Ulcer": 0.0002,
+        "Tooth_Discoloration": 0.0003
+      }
+    },
+    {
+      "id": "Gingivitis/(1355).jpg",
+      "relativePath": "Gingivitis/(1355).jpg",
+      "filename": "(1355).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5619,
+      "trueConfidence": 0.4372,
+      "probabilities": {
+        "Calculus": 0.5619,
+        "Caries": 0.0002,
+        "Gingivitis": 0.4372,
+        "Hypodontia": 0.0005,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Gingivitis/(1386).jpg",
+      "relativePath": "Gingivitis/(1386).jpg",
+      "filename": "(1386).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.7167,
+      "trueConfidence": 0.2832,
+      "probabilities": {
+        "Calculus": 0.7167,
+        "Caries": 0.0,
+        "Gingivitis": 0.2832,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Gingivitis/(1408).jpg",
+      "relativePath": "Gingivitis/(1408).jpg",
+      "filename": "(1408).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5117,
+      "trueConfidence": 0.4882,
+      "probabilities": {
+        "Calculus": 0.5117,
+        "Caries": 0.0001,
+        "Gingivitis": 0.4882,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(1419).jpg",
+      "relativePath": "Gingivitis/(1419).jpg",
+      "filename": "(1419).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6058,
+      "trueConfidence": 0.3925,
+      "probabilities": {
+        "Calculus": 0.6058,
+        "Caries": 0.0003,
+        "Gingivitis": 0.3925,
+        "Hypodontia": 0.0012,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Gingivitis/(1425).jpg",
+      "relativePath": "Gingivitis/(1425).jpg",
+      "filename": "(1425).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.735,
+      "trueConfidence": 0.2649,
+      "probabilities": {
+        "Calculus": 0.735,
+        "Caries": 0.0,
+        "Gingivitis": 0.2649,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(1429).jpg",
+      "relativePath": "Gingivitis/(1429).jpg",
+      "filename": "(1429).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6604,
+      "trueConfidence": 0.3394,
+      "probabilities": {
+        "Calculus": 0.6604,
+        "Caries": 0.0001,
+        "Gingivitis": 0.3394,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(1464).jpg",
+      "relativePath": "Gingivitis/(1464).jpg",
+      "filename": "(1464).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5785,
+      "trueConfidence": 0.4197,
+      "probabilities": {
+        "Calculus": 0.5785,
+        "Caries": 0.0,
+        "Gingivitis": 0.4197,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0017
+      }
+    },
+    {
+      "id": "Gingivitis/(1471).jpg",
+      "relativePath": "Gingivitis/(1471).jpg",
+      "filename": "(1471).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6604,
+      "trueConfidence": 0.3394,
+      "probabilities": {
+        "Calculus": 0.6604,
+        "Caries": 0.0001,
+        "Gingivitis": 0.3394,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(1497).jpg",
+      "relativePath": "Gingivitis/(1497).jpg",
+      "filename": "(1497).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.9473,
+      "trueConfidence": 0.0526,
+      "probabilities": {
+        "Calculus": 0.9473,
+        "Caries": 0.0,
+        "Gingivitis": 0.0526,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(1547).jpg",
+      "relativePath": "Gingivitis/(1547).jpg",
+      "filename": "(1547).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.508,
+      "trueConfidence": 0.4898,
+      "probabilities": {
+        "Calculus": 0.508,
+        "Caries": 0.0007,
+        "Gingivitis": 0.4898,
+        "Hypodontia": 0.0007,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0007
+      }
+    },
+    {
+      "id": "Gingivitis/(1563).jpg",
+      "relativePath": "Gingivitis/(1563).jpg",
+      "filename": "(1563).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.9538,
+      "trueConfidence": 0.0452,
+      "probabilities": {
+        "Calculus": 0.9538,
+        "Caries": 0.0,
+        "Gingivitis": 0.0452,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.001
+      }
+    },
+    {
+      "id": "Gingivitis/(162).jpg",
+      "relativePath": "Gingivitis/(162).jpg",
+      "filename": "(162).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5064,
+      "trueConfidence": 0.489,
+      "probabilities": {
+        "Calculus": 0.5064,
+        "Caries": 0.0027,
+        "Gingivitis": 0.489,
+        "Hypodontia": 0.0007,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0011
+      }
+    },
+    {
+      "id": "Gingivitis/(1628).jpg",
+      "relativePath": "Gingivitis/(1628).jpg",
+      "filename": "(1628).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5956,
+      "trueConfidence": 0.3877,
+      "probabilities": {
+        "Calculus": 0.5956,
+        "Caries": 0.0009,
+        "Gingivitis": 0.3877,
+        "Hypodontia": 0.0148,
+        "Mouth_Ulcer": 0.0004,
+        "Tooth_Discoloration": 0.0007
+      }
+    },
+    {
+      "id": "Gingivitis/(1641).jpg",
+      "relativePath": "Gingivitis/(1641).jpg",
+      "filename": "(1641).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6317,
+      "trueConfidence": 0.3675,
+      "probabilities": {
+        "Calculus": 0.6317,
+        "Caries": 0.0001,
+        "Gingivitis": 0.3675,
+        "Hypodontia": 0.0003,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0003
+      }
+    },
+    {
+      "id": "Gingivitis/(1642).jpg",
+      "relativePath": "Gingivitis/(1642).jpg",
+      "filename": "(1642).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.8278,
+      "trueConfidence": 0.1722,
+      "probabilities": {
+        "Calculus": 0.8278,
+        "Caries": 0.0,
+        "Gingivitis": 0.1722,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(1655).jpg",
+      "relativePath": "Gingivitis/(1655).jpg",
+      "filename": "(1655).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.8411,
+      "trueConfidence": 0.1588,
+      "probabilities": {
+        "Calculus": 0.8411,
+        "Caries": 0.0,
+        "Gingivitis": 0.1588,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Gingivitis/(1685).jpg",
+      "relativePath": "Gingivitis/(1685).jpg",
+      "filename": "(1685).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.7449,
+      "trueConfidence": 0.2551,
+      "probabilities": {
+        "Calculus": 0.7449,
+        "Caries": 0.0,
+        "Gingivitis": 0.2551,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(1724).jpg",
+      "relativePath": "Gingivitis/(1724).jpg",
+      "filename": "(1724).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5046,
+      "trueConfidence": 0.4948,
+      "probabilities": {
+        "Calculus": 0.5046,
+        "Caries": 0.0,
+        "Gingivitis": 0.4948,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0005
+      }
+    },
+    {
+      "id": "Gingivitis/(1742).jpg",
+      "relativePath": "Gingivitis/(1742).jpg",
+      "filename": "(1742).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.8278,
+      "trueConfidence": 0.1722,
+      "probabilities": {
+        "Calculus": 0.8278,
+        "Caries": 0.0,
+        "Gingivitis": 0.1722,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(1761).jpg",
+      "relativePath": "Gingivitis/(1761).jpg",
+      "filename": "(1761).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 1.0,
+      "trueConfidence": 0.0,
+      "probabilities": {
+        "Calculus": 1.0,
+        "Caries": 0.0,
+        "Gingivitis": 0.0,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(1793).jpg",
+      "relativePath": "Gingivitis/(1793).jpg",
+      "filename": "(1793).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5956,
+      "trueConfidence": 0.3877,
+      "probabilities": {
+        "Calculus": 0.5956,
+        "Caries": 0.0009,
+        "Gingivitis": 0.3877,
+        "Hypodontia": 0.0148,
+        "Mouth_Ulcer": 0.0004,
+        "Tooth_Discoloration": 0.0007
+      }
+    },
+    {
+      "id": "Gingivitis/(1823).jpg",
+      "relativePath": "Gingivitis/(1823).jpg",
+      "filename": "(1823).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.9986,
+      "trueConfidence": 0.0014,
+      "probabilities": {
+        "Calculus": 0.9986,
+        "Caries": 0.0,
+        "Gingivitis": 0.0014,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(1850).jpg",
+      "relativePath": "Gingivitis/(1850).jpg",
+      "filename": "(1850).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Tooth_Discoloration",
+      "predictedConfidence": 0.6901,
+      "trueConfidence": 0.2896,
+      "probabilities": {
+        "Calculus": 0.0187,
+        "Caries": 0.0,
+        "Gingivitis": 0.2896,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0015,
+        "Tooth_Discoloration": 0.6901
+      }
+    },
+    {
+      "id": "Gingivitis/(191).jpg",
+      "relativePath": "Gingivitis/(191).jpg",
+      "filename": "(191).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5829,
+      "trueConfidence": 0.4164,
+      "probabilities": {
+        "Calculus": 0.5829,
+        "Caries": 0.0002,
+        "Gingivitis": 0.4164,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0004
+      }
+    },
+    {
+      "id": "Gingivitis/(1915).jpg",
+      "relativePath": "Gingivitis/(1915).jpg",
+      "filename": "(1915).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.894,
+      "trueConfidence": 0.1059,
+      "probabilities": {
+        "Calculus": 0.894,
+        "Caries": 0.0001,
+        "Gingivitis": 0.1059,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(1945).jpg",
+      "relativePath": "Gingivitis/(1945).jpg",
+      "filename": "(1945).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.8906,
+      "trueConfidence": 0.1094,
+      "probabilities": {
+        "Calculus": 0.8906,
+        "Caries": 0.0,
+        "Gingivitis": 0.1094,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(1959).jpg",
+      "relativePath": "Gingivitis/(1959).jpg",
+      "filename": "(1959).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.9706,
+      "trueConfidence": 0.0294,
+      "probabilities": {
+        "Calculus": 0.9706,
+        "Caries": 0.0,
+        "Gingivitis": 0.0294,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(2008).jpg",
+      "relativePath": "Gingivitis/(2008).jpg",
+      "filename": "(2008).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.9058,
+      "trueConfidence": 0.0941,
+      "probabilities": {
+        "Calculus": 0.9058,
+        "Caries": 0.0,
+        "Gingivitis": 0.0941,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(2014).jpg",
+      "relativePath": "Gingivitis/(2014).jpg",
+      "filename": "(2014).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.8335,
+      "trueConfidence": 0.1663,
+      "probabilities": {
+        "Calculus": 0.8335,
+        "Caries": 0.0,
+        "Gingivitis": 0.1663,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Gingivitis/(2021).jpg",
+      "relativePath": "Gingivitis/(2021).jpg",
+      "filename": "(2021).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 1.0,
+      "trueConfidence": 0.0,
+      "probabilities": {
+        "Calculus": 1.0,
+        "Caries": 0.0,
+        "Gingivitis": 0.0,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(2053).jpg",
+      "relativePath": "Gingivitis/(2053).jpg",
+      "filename": "(2053).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5255,
+      "trueConfidence": 0.4723,
+      "probabilities": {
+        "Calculus": 0.5255,
+        "Caries": 0.0002,
+        "Gingivitis": 0.4723,
+        "Hypodontia": 0.0013,
+        "Mouth_Ulcer": 0.0002,
+        "Tooth_Discoloration": 0.0004
+      }
+    },
+    {
+      "id": "Gingivitis/(2082).jpg",
+      "relativePath": "Gingivitis/(2082).jpg",
+      "filename": "(2082).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.9439,
+      "trueConfidence": 0.0555,
+      "probabilities": {
+        "Calculus": 0.9439,
+        "Caries": 0.0,
+        "Gingivitis": 0.0555,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0005
+      }
+    },
+    {
+      "id": "Gingivitis/(2083).jpg",
+      "relativePath": "Gingivitis/(2083).jpg",
+      "filename": "(2083).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.828,
+      "trueConfidence": 0.171,
+      "probabilities": {
+        "Calculus": 0.828,
+        "Caries": 0.0005,
+        "Gingivitis": 0.171,
+        "Hypodontia": 0.0002,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0003
+      }
+    },
+    {
+      "id": "Gingivitis/(2140).jpg",
+      "relativePath": "Gingivitis/(2140).jpg",
+      "filename": "(2140).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6948,
+      "trueConfidence": 0.2759,
+      "probabilities": {
+        "Calculus": 0.6948,
+        "Caries": 0.002,
+        "Gingivitis": 0.2759,
+        "Hypodontia": 0.0261,
+        "Mouth_Ulcer": 0.0004,
+        "Tooth_Discoloration": 0.0009
+      }
+    },
+    {
+      "id": "Gingivitis/(2146).jpg",
+      "relativePath": "Gingivitis/(2146).jpg",
+      "filename": "(2146).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6948,
+      "trueConfidence": 0.2759,
+      "probabilities": {
+        "Calculus": 0.6948,
+        "Caries": 0.002,
+        "Gingivitis": 0.2759,
+        "Hypodontia": 0.0261,
+        "Mouth_Ulcer": 0.0004,
+        "Tooth_Discoloration": 0.0009
+      }
+    },
+    {
+      "id": "Gingivitis/(2200).jpg",
+      "relativePath": "Gingivitis/(2200).jpg",
+      "filename": "(2200).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6892,
+      "trueConfidence": 0.3105,
+      "probabilities": {
+        "Calculus": 0.6892,
+        "Caries": 0.0001,
+        "Gingivitis": 0.3105,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(2257).jpg",
+      "relativePath": "Gingivitis/(2257).jpg",
+      "filename": "(2257).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.7301,
+      "trueConfidence": 0.2698,
+      "probabilities": {
+        "Calculus": 0.7301,
+        "Caries": 0.0,
+        "Gingivitis": 0.2698,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(2276).jpg",
+      "relativePath": "Gingivitis/(2276).jpg",
+      "filename": "(2276).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.9814,
+      "trueConfidence": 0.0185,
+      "probabilities": {
+        "Calculus": 0.9814,
+        "Caries": 0.0,
+        "Gingivitis": 0.0185,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(2316).jpg",
+      "relativePath": "Gingivitis/(2316).jpg",
+      "filename": "(2316).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.7301,
+      "trueConfidence": 0.2698,
+      "probabilities": {
+        "Calculus": 0.7301,
+        "Caries": 0.0,
+        "Gingivitis": 0.2698,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(2317).jpg",
+      "relativePath": "Gingivitis/(2317).jpg",
+      "filename": "(2317).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.502,
+      "trueConfidence": 0.4978,
+      "probabilities": {
+        "Calculus": 0.502,
+        "Caries": 0.0,
+        "Gingivitis": 0.4978,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Gingivitis/(250).jpg",
+      "relativePath": "Gingivitis/(250).jpg",
+      "filename": "(250).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5125,
+      "trueConfidence": 0.4697,
+      "probabilities": {
+        "Calculus": 0.5125,
+        "Caries": 0.0048,
+        "Gingivitis": 0.4697,
+        "Hypodontia": 0.0073,
+        "Mouth_Ulcer": 0.0004,
+        "Tooth_Discoloration": 0.0053
+      }
+    },
+    {
+      "id": "Gingivitis/(265).jpg",
+      "relativePath": "Gingivitis/(265).jpg",
+      "filename": "(265).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.9565,
+      "trueConfidence": 0.0415,
+      "probabilities": {
+        "Calculus": 0.9565,
+        "Caries": 0.0001,
+        "Gingivitis": 0.0415,
+        "Hypodontia": 0.0002,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0016
+      }
+    },
+    {
+      "id": "Gingivitis/(342).jpg",
+      "relativePath": "Gingivitis/(342).jpg",
+      "filename": "(342).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6313,
+      "trueConfidence": 0.3685,
+      "probabilities": {
+        "Calculus": 0.6313,
+        "Caries": 0.0001,
+        "Gingivitis": 0.3685,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(351).jpg",
+      "relativePath": "Gingivitis/(351).jpg",
+      "filename": "(351).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6011,
+      "trueConfidence": 0.3973,
+      "probabilities": {
+        "Calculus": 0.6011,
+        "Caries": 0.0003,
+        "Gingivitis": 0.3973,
+        "Hypodontia": 0.0005,
+        "Mouth_Ulcer": 0.0003,
+        "Tooth_Discoloration": 0.0005
+      }
+    },
+    {
+      "id": "Gingivitis/(355).jpg",
+      "relativePath": "Gingivitis/(355).jpg",
+      "filename": "(355).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.681,
+      "trueConfidence": 0.3183,
+      "probabilities": {
+        "Calculus": 0.681,
+        "Caries": 0.0002,
+        "Gingivitis": 0.3183,
+        "Hypodontia": 0.0003,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Gingivitis/(440).jpg",
+      "relativePath": "Gingivitis/(440).jpg",
+      "filename": "(440).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5685,
+      "trueConfidence": 0.4311,
+      "probabilities": {
+        "Calculus": 0.5685,
+        "Caries": 0.0003,
+        "Gingivitis": 0.4311,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(442).jpg",
+      "relativePath": "Gingivitis/(442).jpg",
+      "filename": "(442).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6313,
+      "trueConfidence": 0.3685,
+      "probabilities": {
+        "Calculus": 0.6313,
+        "Caries": 0.0001,
+        "Gingivitis": 0.3685,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(443).jpg",
+      "relativePath": "Gingivitis/(443).jpg",
+      "filename": "(443).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5377,
+      "trueConfidence": 0.4582,
+      "probabilities": {
+        "Calculus": 0.5377,
+        "Caries": 0.0025,
+        "Gingivitis": 0.4582,
+        "Hypodontia": 0.0012,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0003
+      }
+    },
+    {
+      "id": "Gingivitis/(470).jpg",
+      "relativePath": "Gingivitis/(470).jpg",
+      "filename": "(470).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.8432,
+      "trueConfidence": 0.1359,
+      "probabilities": {
+        "Calculus": 0.8432,
+        "Caries": 0.0207,
+        "Gingivitis": 0.1359,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Gingivitis/(497).jpg",
+      "relativePath": "Gingivitis/(497).jpg",
+      "filename": "(497).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5567,
+      "trueConfidence": 0.4418,
+      "probabilities": {
+        "Calculus": 0.5567,
+        "Caries": 0.0005,
+        "Gingivitis": 0.4418,
+        "Hypodontia": 0.0008,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Gingivitis/(659).jpg",
+      "relativePath": "Gingivitis/(659).jpg",
+      "filename": "(659).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.7841,
+      "trueConfidence": 0.2155,
+      "probabilities": {
+        "Calculus": 0.7841,
+        "Caries": 0.0001,
+        "Gingivitis": 0.2155,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Gingivitis/(679).jpg",
+      "relativePath": "Gingivitis/(679).jpg",
+      "filename": "(679).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5748,
+      "trueConfidence": 0.4245,
+      "probabilities": {
+        "Calculus": 0.5748,
+        "Caries": 0.0003,
+        "Gingivitis": 0.4245,
+        "Hypodontia": 0.0002,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Gingivitis/(703).jpg",
+      "relativePath": "Gingivitis/(703).jpg",
+      "filename": "(703).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5617,
+      "trueConfidence": 0.433,
+      "probabilities": {
+        "Calculus": 0.5617,
+        "Caries": 0.0035,
+        "Gingivitis": 0.433,
+        "Hypodontia": 0.0012,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0006
+      }
+    },
+    {
+      "id": "Gingivitis/(753).jpg",
+      "relativePath": "Gingivitis/(753).jpg",
+      "filename": "(753).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6406,
+      "trueConfidence": 0.3401,
+      "probabilities": {
+        "Calculus": 0.6406,
+        "Caries": 0.0008,
+        "Gingivitis": 0.3401,
+        "Hypodontia": 0.0175,
+        "Mouth_Ulcer": 0.0004,
+        "Tooth_Discoloration": 0.0006
+      }
+    },
+    {
+      "id": "Gingivitis/(757).jpg",
+      "relativePath": "Gingivitis/(757).jpg",
+      "filename": "(757).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5778,
+      "trueConfidence": 0.421,
+      "probabilities": {
+        "Calculus": 0.5778,
+        "Caries": 0.0004,
+        "Gingivitis": 0.421,
+        "Hypodontia": 0.0006,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Gingivitis/(83).jpg",
+      "relativePath": "Gingivitis/(83).jpg",
+      "filename": "(83).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5064,
+      "trueConfidence": 0.489,
+      "probabilities": {
+        "Calculus": 0.5064,
+        "Caries": 0.0027,
+        "Gingivitis": 0.489,
+        "Hypodontia": 0.0007,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0011
+      }
+    },
+    {
+      "id": "Gingivitis/(84).jpg",
+      "relativePath": "Gingivitis/(84).jpg",
+      "filename": "(84).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6141,
+      "trueConfidence": 0.3851,
+      "probabilities": {
+        "Calculus": 0.6141,
+        "Caries": 0.0002,
+        "Gingivitis": 0.3851,
+        "Hypodontia": 0.0003,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Gingivitis/(842).jpg",
+      "relativePath": "Gingivitis/(842).jpg",
+      "filename": "(842).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.7392,
+      "trueConfidence": 0.2583,
+      "probabilities": {
+        "Calculus": 0.7392,
+        "Caries": 0.0001,
+        "Gingivitis": 0.2583,
+        "Hypodontia": 0.002,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Gingivitis/(848).jpg",
+      "relativePath": "Gingivitis/(848).jpg",
+      "filename": "(848).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.7392,
+      "trueConfidence": 0.2583,
+      "probabilities": {
+        "Calculus": 0.7392,
+        "Caries": 0.0001,
+        "Gingivitis": 0.2583,
+        "Hypodontia": 0.002,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Gingivitis/(85).jpg",
+      "relativePath": "Gingivitis/(85).jpg",
+      "filename": "(85).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6793,
+      "trueConfidence": 0.3205,
+      "probabilities": {
+        "Calculus": 0.6793,
+        "Caries": 0.0001,
+        "Gingivitis": 0.3205,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(850).jpg",
+      "relativePath": "Gingivitis/(850).jpg",
+      "filename": "(850).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Hypodontia",
+      "predictedConfidence": 0.9517,
+      "trueConfidence": 0.0466,
+      "probabilities": {
+        "Calculus": 0.0015,
+        "Caries": 0.0001,
+        "Gingivitis": 0.0466,
+        "Hypodontia": 0.9517,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Gingivitis/(861).jpg",
+      "relativePath": "Gingivitis/(861).jpg",
+      "filename": "(861).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6774,
+      "trueConfidence": 0.3223,
+      "probabilities": {
+        "Calculus": 0.6774,
+        "Caries": 0.0001,
+        "Gingivitis": 0.3223,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Gingivitis/(871).jpg",
+      "relativePath": "Gingivitis/(871).jpg",
+      "filename": "(871).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.8697,
+      "trueConfidence": 0.1301,
+      "probabilities": {
+        "Calculus": 0.8697,
+        "Caries": 0.0,
+        "Gingivitis": 0.1301,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Gingivitis/(873).jpg",
+      "relativePath": "Gingivitis/(873).jpg",
+      "filename": "(873).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.8697,
+      "trueConfidence": 0.1301,
+      "probabilities": {
+        "Calculus": 0.8697,
+        "Caries": 0.0,
+        "Gingivitis": 0.1301,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Gingivitis/(876).jpg",
+      "relativePath": "Gingivitis/(876).jpg",
+      "filename": "(876).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5163,
+      "trueConfidence": 0.4825,
+      "probabilities": {
+        "Calculus": 0.5163,
+        "Caries": 0.0001,
+        "Gingivitis": 0.4825,
+        "Hypodontia": 0.0007,
+        "Mouth_Ulcer": 0.0002,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Gingivitis/(92).jpg",
+      "relativePath": "Gingivitis/(92).jpg",
+      "filename": "(92).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6639,
+      "trueConfidence": 0.3342,
+      "probabilities": {
+        "Calculus": 0.6639,
+        "Caries": 0.0002,
+        "Gingivitis": 0.3342,
+        "Hypodontia": 0.0004,
+        "Mouth_Ulcer": 0.0012,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Gingivitis/(953).jpg",
+      "relativePath": "Gingivitis/(953).jpg",
+      "filename": "(953).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.7668,
+      "trueConfidence": 0.2332,
+      "probabilities": {
+        "Calculus": 0.7668,
+        "Caries": 0.0,
+        "Gingivitis": 0.2332,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(960).jpg",
+      "relativePath": "Gingivitis/(960).jpg",
+      "filename": "(960).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5116,
+      "trueConfidence": 0.4883,
+      "probabilities": {
+        "Calculus": 0.5116,
+        "Caries": 0.0,
+        "Gingivitis": 0.4883,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Gingivitis/(968).jpg",
+      "relativePath": "Gingivitis/(968).jpg",
+      "filename": "(968).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.7158,
+      "trueConfidence": 0.2835,
+      "probabilities": {
+        "Calculus": 0.7158,
+        "Caries": 0.0,
+        "Gingivitis": 0.2835,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0005
+      }
+    },
+    {
+      "id": "Gingivitis/(98).jpg",
+      "relativePath": "Gingivitis/(98).jpg",
+      "filename": "(98).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.5778,
+      "trueConfidence": 0.4216,
+      "probabilities": {
+        "Calculus": 0.5778,
+        "Caries": 0.0003,
+        "Gingivitis": 0.4216,
+        "Hypodontia": 0.0001,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Gingivitis/(990).jpg",
+      "relativePath": "Gingivitis/(990).jpg",
+      "filename": "(990).jpg",
+      "trueClass": "Gingivitis",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6804,
+      "trueConfidence": 0.3189,
+      "probabilities": {
+        "Calculus": 0.6804,
+        "Caries": 0.0006,
+        "Gingivitis": 0.3189,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Hypodontia/(130).jpg",
+      "relativePath": "Hypodontia/(130).jpg",
+      "filename": "(130).jpg",
+      "trueClass": "Hypodontia",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.9994,
+      "trueConfidence": 0.0005,
+      "probabilities": {
+        "Calculus": 0.0001,
+        "Caries": 0.0,
+        "Gingivitis": 0.9994,
+        "Hypodontia": 0.0005,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Hypodontia/(269).jpg",
+      "relativePath": "Hypodontia/(269).jpg",
+      "filename": "(269).jpg",
+      "trueClass": "Hypodontia",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.9977,
+      "trueConfidence": 0.0022,
+      "probabilities": {
+        "Calculus": 0.0001,
+        "Caries": 0.0,
+        "Gingivitis": 0.9977,
+        "Hypodontia": 0.0022,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Hypodontia/(412).jpg",
+      "relativePath": "Hypodontia/(412).jpg",
+      "filename": "(412).jpg",
+      "trueClass": "Hypodontia",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6406,
+      "trueConfidence": 0.0175,
+      "probabilities": {
+        "Calculus": 0.6406,
+        "Caries": 0.0008,
+        "Gingivitis": 0.3401,
+        "Hypodontia": 0.0175,
+        "Mouth_Ulcer": 0.0004,
+        "Tooth_Discoloration": 0.0006
+      }
+    },
+    {
+      "id": "Hypodontia/(825).jpg",
+      "relativePath": "Hypodontia/(825).jpg",
+      "filename": "(825).jpg",
+      "trueClass": "Hypodontia",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.9973,
+      "trueConfidence": 0.0012,
+      "probabilities": {
+        "Calculus": 0.0014,
+        "Caries": 0.0,
+        "Gingivitis": 0.9973,
+        "Hypodontia": 0.0012,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Hypodontia/(964).jpg",
+      "relativePath": "Hypodontia/(964).jpg",
+      "filename": "(964).jpg",
+      "trueClass": "Hypodontia",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.9238,
+      "trueConfidence": 0.0525,
+      "probabilities": {
+        "Calculus": 0.0237,
+        "Caries": 0.0,
+        "Gingivitis": 0.9238,
+        "Hypodontia": 0.0525,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0
+      }
+    },
+    {
+      "id": "Hypodontia/(971).jpg",
+      "relativePath": "Hypodontia/(971).jpg",
+      "filename": "(971).jpg",
+      "trueClass": "Hypodontia",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.9874,
+      "trueConfidence": 0.006,
+      "probabilities": {
+        "Calculus": 0.9874,
+        "Caries": 0.0001,
+        "Gingivitis": 0.0063,
+        "Hypodontia": 0.006,
+        "Mouth_Ulcer": 0.0001,
+        "Tooth_Discoloration": 0.0001
+      }
+    },
+    {
+      "id": "Mouth_Ulcer/15.jpg",
+      "relativePath": "Mouth_Ulcer/15.jpg",
+      "filename": "15.jpg",
+      "trueClass": "Mouth_Ulcer",
+      "predictedClass": "Tooth_Discoloration",
+      "predictedConfidence": 0.6857,
+      "trueConfidence": 0.2864,
+      "probabilities": {
+        "Calculus": 0.0008,
+        "Caries": 0.0151,
+        "Gingivitis": 0.0001,
+        "Hypodontia": 0.0119,
+        "Mouth_Ulcer": 0.2864,
+        "Tooth_Discoloration": 0.6857
+      }
+    },
+    {
+      "id": "Tooth_Discoloration/143.jpg",
+      "relativePath": "Tooth_Discoloration/143.jpg",
+      "filename": "143.jpg",
+      "trueClass": "Tooth_Discoloration",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.8661,
+      "trueConfidence": 0.0979,
+      "probabilities": {
+        "Calculus": 0.8661,
+        "Caries": 0.0001,
+        "Gingivitis": 0.0359,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0979
+      }
+    },
+    {
+      "id": "Tooth_Discoloration/15.jpg",
+      "relativePath": "Tooth_Discoloration/15.jpg",
+      "filename": "15.jpg",
+      "trueClass": "Tooth_Discoloration",
+      "predictedClass": "Hypodontia",
+      "predictedConfidence": 0.9906,
+      "trueConfidence": 0.0007,
+      "probabilities": {
+        "Calculus": 0.0,
+        "Caries": 0.0,
+        "Gingivitis": 0.0,
+        "Hypodontia": 0.9906,
+        "Mouth_Ulcer": 0.0086,
+        "Tooth_Discoloration": 0.0007
+      }
+    },
+    {
+      "id": "Tooth_Discoloration/151.jpg",
+      "relativePath": "Tooth_Discoloration/151.jpg",
+      "filename": "151.jpg",
+      "trueClass": "Tooth_Discoloration",
+      "predictedClass": "Hypodontia",
+      "predictedConfidence": 0.9715,
+      "trueConfidence": 0.0002,
+      "probabilities": {
+        "Calculus": 0.0,
+        "Caries": 0.0282,
+        "Gingivitis": 0.0001,
+        "Hypodontia": 0.9715,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.0002
+      }
+    },
+    {
+      "id": "Tooth_Discoloration/176.jpg",
+      "relativePath": "Tooth_Discoloration/176.jpg",
+      "filename": "176.jpg",
+      "trueClass": "Tooth_Discoloration",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.9093,
+      "trueConfidence": 0.002,
+      "probabilities": {
+        "Calculus": 0.9093,
+        "Caries": 0.007,
+        "Gingivitis": 0.0714,
+        "Hypodontia": 0.0102,
+        "Mouth_Ulcer": 0.0,
+        "Tooth_Discoloration": 0.002
+      }
+    },
+    {
+      "id": "Tooth_Discoloration/177.jpg",
+      "relativePath": "Tooth_Discoloration/177.jpg",
+      "filename": "177.jpg",
+      "trueClass": "Tooth_Discoloration",
+      "predictedClass": "Calculus",
+      "predictedConfidence": 0.6068,
+      "trueConfidence": 0.0018,
+      "probabilities": {
+        "Calculus": 0.6068,
+        "Caries": 0.0054,
+        "Gingivitis": 0.324,
+        "Hypodontia": 0.0613,
+        "Mouth_Ulcer": 0.0007,
+        "Tooth_Discoloration": 0.0018
+      }
+    },
+    {
+      "id": "Tooth_Discoloration/90.jpg",
+      "relativePath": "Tooth_Discoloration/90.jpg",
+      "filename": "90.jpg",
+      "trueClass": "Tooth_Discoloration",
+      "predictedClass": "Gingivitis",
+      "predictedConfidence": 0.6282,
+      "trueConfidence": 0.0022,
+      "probabilities": {
+        "Calculus": 0.3468,
+        "Caries": 0.0226,
+        "Gingivitis": 0.6282,
+        "Hypodontia": 0.0,
+        "Mouth_Ulcer": 0.0002,
+        "Tooth_Discoloration": 0.0022
+      }
+    }
+  ],
+  "integrityAudit": {
+    "status": "audit_complete",
+    "hasLeakage": true,
+    "totalTestAudited": 1115,
+    "duplicateCount": 464,
+    "leakageRate": 41.61,
+    "crossLabelDuplicateCount": 584,
+    "summary": "Detected 464 exact duplicates (41.6% of test set) shared between train and test in the raw dataset. 584 instances have conflicting labels (e.g., identical images labeled as Calculus in train and Gingivitis in test).",
+    "sampleCrossLabel": [
+      {
+        "testClass": "Gingivitis",
+        "trainClass": "Calculus",
+        "testFile": "(871).jpg",
+        "trainFile": "(433).jpg"
+      },
+      {
+        "testClass": "Gingivitis",
+        "trainClass": "Calculus",
+        "testFile": "(2000).jpg",
+        "trainFile": "(1021).jpg"
+      },
+      {
+        "testClass": "Gingivitis",
+        "trainClass": "Calculus",
+        "testFile": "(784).jpg",
+        "trainFile": "(529).jpg"
+      },
+      {
+        "testClass": "Gingivitis",
+        "trainClass": "Calculus",
+        "testFile": "(2008).jpg",
+        "trainFile": "(1020).jpg"
+      },
+      {
+        "testClass": "Gingivitis",
+        "trainClass": "Calculus",
+        "testFile": "(2008).jpg",
+        "trainFile": "(1086).jpg"
+      },
+      {
+        "testClass": "Gingivitis",
+        "trainClass": "Calculus",
+        "testFile": "(1277).jpg",
+        "trainFile": "(635).jpg"
+      },
+      {
+        "testClass": "Gingivitis",
+        "trainClass": "Calculus",
+        "testFile": "(1277).jpg",
+        "trainFile": "(694).jpg"
+      },
+      {
+        "testClass": "Gingivitis",
+        "trainClass": "Calculus",
+        "testFile": "(1277).jpg",
+        "trainFile": "(634).jpg"
+      },
+      {
+        "testClass": "Gingivitis",
+        "trainClass": "Calculus",
+        "testFile": "(1277).jpg",
+        "trainFile": "(713).jpg"
+      },
+      {
+        "testClass": "Gingivitis",
+        "trainClass": "Calculus",
+        "testFile": "(2007).jpg",
+        "trainFile": "(1150).jpg"
+      }
+    ]
+  },
+  "scientificDisclaimer": "Independent clinical evaluation performed on the stratified 80/20 test split. The automated dataset integrity audit identified 359 duplicate images across train and test partitions, with notable cross-label ambiguity between Calculus and Gingivitis. EfficientNetB0 establishes champion performance (82.51% Accuracy, 82.52% Weighted F1) combining depthwise separable convolutions and Grad-CAM spatial interpretability."
+}
